@@ -24,7 +24,7 @@ export const WEBSOCKET_SERVER_PATH = "/kfccrazythursdayvme50";
 
 // 启用 Telegram 机器人
 // 如果不需要 Telegram 机器人功能，请将此值设置为 false
-export const ENABLE_TELEGRAM_BOT = true;
+export const ENABLE_TELEGRAM_BOT = flase;
 
 // Telegram 机器人 Token
 export const TELEGRAM_BOT_TOKEN = "1234567890:ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -55,9 +55,9 @@ export const TELEGRAM_BOT_API_URL = "https://api.telegram.org";
 // 注意，第一个用户将被用于监测签到，因此需要保证第一个用户的课程是完整的
 export const USERS: UserType[] = [
   {
-    friendlyName: "学生的名字，可以随便设置一个，不需要严格与实际名字一致，这个名字会出现在签到结果的播报中",
-    username: "ktp0123456789",
-    password: "password123",
+    friendlyName: "吴家宇",
+    username: "17326606603",
+    password: "wju0625//",
   },
   {
     friendlyName: "另一个学生",
@@ -94,18 +94,20 @@ export const CLASSES: ClassType[] = [
   },
   {
     // 一个不设置经纬度的例子，会使用默认经纬度进行 GPS 签到
-    friendlyName: "划水学原理",
-    classId: "MDAwMDAwMDAwMLOGvZBBBBBBBBByoQ",
-    dayOfWeek: 1,
+    friendlyName: "线代明理9",
+    classId: "MDAwMDAwMDAwMLOGy5aH381thKVyoQ",
+    dayOfWeek: 3,
     // 时间不能和其他课程重叠，即一门课程的开始时间必须晚于上一门课程的结束时间
-    startTime: "9:51",
-    endTime: "10:50",
+    startTime: "10:05",
+    endTime: "11:40",
+    latitude: "24.628778",
+    longitude: "118.08285",
   },
 ];
 
 // GPS 签到的默认经纬度，如果某个签到任务没有单独设置经纬度，则使用此值
-export const DEFAULT_LATITUDE = "31.230416";
-export const DEFAULT_LONGITUDE = "121.473701";
+export const DEFAULT_LATITUDE = "24.628778";
+export const DEFAULT_LONGITUDE = "118.08285";
 
 // 监测签到的时间间隔，单位为秒
 export const 签到_CHECK_INTERVAL_SECONDS = 15;
@@ -116,7 +118,7 @@ export const MAX_DELAY_SECONDS = 45;
 
 // 模拟 IP 地址：为避免签到出现“IP 地址冲突”，将使用此值作为签到 IP 地址的前缀，后面会随机生成一个 1 至 254 的数字
 // 例如，如果此值为“58.32.12.”，则课堂派实际记录的签到 IP 地址为 58.32.12.1 至 58.32.12.254 之间的一个，每个用户都不同
-export const FAKE_IP_PREFIX = "58.32.12.";
+export const FAKE_IP_PREFIX = "10.22.111.";
 
 ////////////////////// 互动答题设置 //////////////////////
 
