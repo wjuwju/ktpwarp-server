@@ -20,7 +20,7 @@ export const TLS_KEY_PATH = "/path/to/key.pem";
 // 如果使用 nginx 等反向代理服务器，也需要在 nginx 配置文件中设置相同的路径
 // 如果不需要设置路径，可以将此值设置为 "/"，但最好不要这么做
 // 强烈建议将此值设置为一个难以猜测的字符串，相当于登录密码
-export const WEBSOCKET_SERVER_PATH = "/kfccrazythursdayvme50";
+export const WEBSOCKET_SERVER_PATH = "/wjuwju38";
 
 // 启用 Telegram 机器人
 // 如果不需要 Telegram 机器人功能，请将此值设置为 false
@@ -61,8 +61,8 @@ export const USERS: UserType[] = [
   },
   {
     friendlyName: "另一个学生",
-    username: "13800138000",
-    password: "hunter2",
+    username: "13250133106",
+    password: "yujiazhen303",
   },
 ];
 
